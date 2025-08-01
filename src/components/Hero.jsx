@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "https://europlas.com.vn/Data/Sites/1/Banner/1banner-home.jpg",
+    image: "./images/banner1.webp",
     // title: "Top Industrial Insulation Materials",
     // subtitle: "Providing the best plastic insulation solutions across industries",
   },
