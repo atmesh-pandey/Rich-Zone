@@ -35,15 +35,16 @@ const Footer = () => {
         <div className="hidden md:block w-px bg-gray-300 h-full mx-auto col-span-1" />
 
         {/* Products */}
-        <div className="col-span-full md:col-span-1">
+        <div className="col-span-full md:col-span-1" style={{ width: "max-content" }}>
           <h3 className="text-xl font-semibold mb-4">Products</h3>
           <ul className="space-y-2 text-sm text-gray-700">
-            <li><a href="#" className="hover:text-amber-600">Bioplastic Compound</a></li>
-            <li><a href="#" className="hover:text-amber-600">Color Masterbatch</a></li>
-            <li><a href="#" className="hover:text-amber-600">Plastic Additives</a></li>
-            <li><a href="#" className="hover:text-amber-600">Engineering Plastics</a></li>
-            <li><a href="#" className="hover:text-amber-600">Filler Masterbatch</a></li>
-            <li><a href="#" className="hover:text-amber-600">Bio Filler</a></li>
+            <li>PE-Based Calcium Filler</li>
+            <li>PP-Based Calcium Filler</li>
+            <li>HD Based Calcium Filler</li>
+            <li>Sodium Based Transparent Filler</li>
+            <li>Black and White Masterbatch Filler</li>
+            <li>Desiccant (Anti Moisture) Masterbatch</li>
+            <li>OB Masterbatch</li>
           </ul>
         </div>
 
@@ -70,15 +71,15 @@ const Footer = () => {
           <ul className="space-y-4 text-sm text-gray-700">
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-3xl" />
-              <span>Headquarters: A66, 3HA Quarter, Phu Dien Ward, Hanoi City, Vietnam</span>
+              <span>RICHZONE WORLWIDE PVT LTD, No 57/A, Ground floor, 5th main, Behind Lila Pa, H.A.L ll Stage, Bangalore, KARNATAKA 560008</span>
             </li>
             <li className="flex items-start gap-3">
               <FaPhoneAlt className="mt-1" />
-              <span>Tel: (+84) 24 3201 0358</span>
+              <span>Tel: (+91) 8296217773</span>
             </li>
             <li className="flex items-start gap-3">
               <FaEnvelope className="mt-1" />
-              <span>Email: info@europlas.com.vn</span>
+              <span>Email: sales@myrichzone.com</span>
             </li>
           </ul>
         </div>
@@ -100,7 +101,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-blue-900 text-white text-center py-4 mt-8">
-      <p>&copy; 2025 Europlas. All rights reserved.</p>
+      <p>&copy; 2025 Rich Zone. All rights reserved.</p>
     </div>
     </footer>
   );
