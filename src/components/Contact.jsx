@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen bg-gray-100 flex flex-col justify-center items-center px-4"
+      className="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4"
     >
       <h2 className="text-3xl sm:text-4xl font-bold uppercase mb-10 text-center">
         Contact Us

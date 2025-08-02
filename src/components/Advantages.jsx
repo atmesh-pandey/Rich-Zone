@@ -2,7 +2,7 @@ import React from 'react';
 
 const Advantage = () => {
   return (
-    <div className="w-full min-h-screen bg-red-500 flex items-center justify-center px-4 py-10">
+    <div className="w-full min-h-screen bg-green-300 flex items-center justify-center px-4 py-10">
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl gap-12">
         {/* Left Content */}
         <div className="flex flex-col text-white space-y-12 w-full lg:max-w-[45%]">

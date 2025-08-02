@@ -7,7 +7,7 @@ const About = () => {
       {/* Banner Image */}
       <img
         className="w-full h-[40vh] object-cover"
-        src="https://t4.ftcdn.net/jpg/13/11/53/63/240_F_1311536317_6lUH7M9dnr0pMPdW6Bh9iQOAes23erlr.jpg"
+        src="../../public/images/aboutImage.png" // Replace with actual image path
         alt="Banner"
       />
 

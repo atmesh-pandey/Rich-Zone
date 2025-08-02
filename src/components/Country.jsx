@@ -5,7 +5,7 @@ const Country = () => {
     <div className="w-full relative">
       {/* Background Image Section - fixed, 40vh height */}
       <div
-        className="w-full h-[40vh] bg-[url('/images/capsule.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+        className="w-full h-[40vh] bg-[url('../../public/images/calciumCarbonate.pn')] bg-cover bg-center bg-no-repeat bg-fixed opacity-30"
         style={{ minHeight: "40vh", maxHeight: "40vh" }}
       />
 

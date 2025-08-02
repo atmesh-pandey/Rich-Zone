@@ -5,17 +5,21 @@ const Explanation = () => {
         <div className="w-full overflow-x-hidden relative">
             {/* Image */}
             <img
-                src="/images/explore.png"
+                src="/images/explanation.png"
                 alt="Explore"
-                className="w-full h-auto object-cover"
+                className="w-full h-[60vh] object-cover"
             />
 
-            {/* Centered Text */}
-            <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center px-4">
-                    Thousands of factories in over 95 countries have <br /> chosen EuroPlas products
-                </h1>
+            {/* Centered Text with blur and background shadow */}
+            <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/40">
+                <div className="bg-black/40 px-6 py-4 rounded shadow-xl">
+                    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold text-center drop-shadow-sm">
+                        We're committed to providing world-class products <br /> to manufacturers worldwide.
+                    </h1>
+                </div>
             </div>
+
+
         </div>
     );
 };

@@ -12,6 +12,13 @@ import Blog from './components/Blog';
 import Footer from './components/Footer';
 import About from './components/About';
 import Products from './components/Products';
+import Kadai from './components/products/Kadai';
+import BiryaniPot from './components/products/BiryaniPot';
+import FryPan from './components/products/FryPan';
+import SaucePan from './components/products/SaucePan';
+import Top from './components/products/Top';
+import Tasra from './components/products/Tasra';
+import SearchResults from './components/SearchResults';
 
 function App() {
 
@@ -20,9 +27,9 @@ function App() {
       <Hero />
       <Heart />
       <Explanation />
-      <Country />
+      {/* <Country /> */}
       <Advantages />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
     </>
@@ -36,8 +43,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/products/kadai" element={<Kadai />} />
+        <Route path="/products/biryani-pot" element={<BiryaniPot />} />
+        <Route path="/products/fry-pan" element={<FryPan />} />
+        <Route path="/products/sauce-pan" element={<SaucePan />} />
+        <Route path="/products/top" element={<Top />} />
+        <Route path="/products/tasra" element={<Tasra />} />
       </Routes>
       </div>
     </>

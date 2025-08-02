@@ -1,77 +1,86 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const products = [
     {
-        name: 'PE-Based Calcium Filler',
+        name: 'Cookware – Kadai',
         image: '../../public/images/kadai.png',
-        description:
-            'A polyethylene-based calcium carbonate masterbatch ideal for blown film and injection molding applications. Enhances stiffness, reduces cost, and improves output rates.',
+        description: "Durable tri-ply stainless steel kadai for fast, even heating. Features a cool-touch handle, induction & gas-compatible base, and a stainless steel lid for better heat retention. Perfect for everyday cooking.",
         features: [
-            'Carrier: LDPE/LLDPE',
-            'Calcium Carbonate loading: Up to 75%',
-            'Improves extrusion performance',
-            'Available in multiple grades',
+            'Material: Tri-Ply Stainless Steel',
+            'Sizes Available: [2L, 3L, 5L]',
+            'Induction & Gas Compatible Base',
+            'Stay-Cool Handle',
         ],
+        path: '/products/kadai',
     },
     {
-        name: 'PP-Based Calcium Filler',
+        name: 'Biryani Pot',
         image: '../../public/images/biryaniPoat.png',
         description:
-            'Polypropylene-based filler masterbatch used for injection molding, raffia, and thermoforming. Offers better surface finish and improved dimensional stability.',
+            'Perfectly crafted for authentic biryani cooking, this premium stainless steel pot offers durability and excellent heat distribution for rich, flavorful meals.',
         features: [
-            'Carrier: PP',
-            'Optimized for woven sacks and thermoforming',
-            'Enhances rigidity and opacity',
-            'Cost-effective material substitution',
+            'High-Grade Stainless Steel: Rust-resistant and durable',
+            'Compatible with Gas & Induction: Versatile cooking options',
+            'Elegant Polished Finish: Stylish and modern look for your kitchen',
+            'Thick Base: Prevents food from burning and ensures even cooking',
         ],
+        path: '/products/biryani-pot',
+
+
     },
     {
-        name: 'HD-Based Calcium Filler',
+        name: 'Fry Pan',
         image: '../../public/images/fryPan.png',
         description:
-            'High-density polyethylene-based filler masterbatch designed for HDPE film, pipe extrusion, and blow molding.',
+            'The Jenny® Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.',
         features: [
-            'Carrier: HDPE',
-            'Excellent dispersion and whiteness',
-            'Reduces shrinkage',
-            'Compatible with multi-layer applications',
+            'Flat Base: Ideal for frying, browning, and pan-searing',
+            'Cool-Touch Handle: Ergonomic and riveted for safety',
+            'Induction Friendly: Works with gas, induction, and electric stovetops',
+            'Non-Reactive Surface: Safe and toxin-free cooking',
         ],
+        path: '/products/fry-pan',
     },
     {
-        name: 'Sodium Based Transparent Filler',
+        name: 'Sauce Pan',
         image: '../../public/images/pan.png',
         description:
-            'Sodium-based transparent filler for applications that require clarity with mineral content. Best for shopping bags and transparent films.',
+            'The Jenny® Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.',
         features: [
-            'Maintains film transparency',
-            'Improves stiffness and tensile strength',
-            'Low haze levels',
-            'Recommended for T-shirt bags and liners',
+            'Mirror Polish Exterior: Stylish and elegant look',
+            'Precision Pouring Rim: Drip-free pouring without mess',
+            'Induction Ready: Works with all cooktops',
+            'Easy to Clean: Dishwasher safe and stain-resistan',
         ],
+        path: '/products/sauce-pan',
     },
     {
-        name: 'Black and White Masterbatch Filler',
+        name: 'Top',
         image: '../../public/images/top.png',
         description:
-            'Black and white masterbatches offering high color consistency and UV protection. Widely used in pipes, films, and molded parts.',
+            'The Jenny® Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.',
         features: [
-            'High pigment concentration',
-            'Excellent dispersion',
-            'UV resistant and FDA compliant (optional)',
-            'Custom shades available on request',
+            'Induction & Gas Compatible: Versatile cooking options',
+            'Seamless Design: Easy to clean with no sharp edges',
+            'Stackable: Saves space in your kitchen shelves',
+            'Multipurpose Use: Ideal for boiling, heating, or storing',
         ],
+        path: '/products/top',
+
     },
     {
-        name: 'Desiccant (Anti Moisture) Masterbatch',
-        image: 'https://via.placeholder.com/600x300?text=Desiccant+MB',
+        name: 'Tasra',
+        image: '../../public/images/tasla.png',
         description:
-            'Anti-moisture masterbatch for recycled plastic processing. Removes surface and trapped moisture to prevent bubbles, holes, or weak spots in finished goods.',
+            'The Jenny® Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.',
         features: [
-            'Absorbs 20–25% of its weight in moisture',
-            'No pre-drying required',
-            'Improves process stability',
-            'Ideal for blown film and injection molding',
+            'Dishwasher-Safe: Easy maintenance for everyday use',
+            'Premium Stainless Steel: 100% food-grade and rust-resistant',
+            'Sturdy Handles: Riveted handles for durability and safety',
+            'Multi-Utility: Boil, cook, or reheat with ease',
         ],
+        path: '/products/tasra',
     },
     {
         name: 'OB Masterbatch',
@@ -116,11 +125,14 @@ const Product = () => {
                                 <li key={i}>{feature}</li>
                             ))}
                         </ul>
-                        {/* <div className="text-right">
-              <button className="mt-4 bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded">
-                📦 Request Sample
-              </button>
-            </div> */}
+                        <div className="text-right">
+                            <Link
+                                to={product.path}
+                                className="inline-block mt-4 bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded"
+                            >
+                                📦 All Details
+                            </Link>
+                        </div>
                     </div>
                 ))}
             </div>
