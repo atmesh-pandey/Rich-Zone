@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="/" onClick={() => setActive('/')}>
-            <img src="/images/download.png" alt="EuroPlas Logo" className="h-10 sm:h-12 w-auto" />
+            <img src="/images/logo.webp" alt="EuroPlas Logo" className="h-10 sm:h-12 w-auto" />
           </Link>
         </div>
 
