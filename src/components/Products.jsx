@@ -82,18 +82,97 @@ const products = [
         ],
         path: '/products/tasra',
     },
-    {
-        name: 'OB Masterbatch',
-        image: 'https://via.placeholder.com/600x300?text=OB+Masterbatch',
-        description:
-            'Optical brightener masterbatch (OB) enhances whiteness and brightness in plastic products. Ideal for PP, PE, and PS-based applications.',
-        features: [
-            'Contains optical brightening agent (OB-1)',
-            'Improves color appeal',
-            'Heat resistant and long-lasting',
-            'Effective in thin films and molded parts',
-        ],
-    },
+  {
+    name: 'PE-Based Calcium Filler',
+    image: '../../public/images/pePollemer.png',
+    description:
+      'PE-Based Calcium Filler is specially designed for polyethylene-based products like films, injection molding, and blow molding. It enhances stiffness and reduces production costs.',
+    features: [
+      'Excellent compatibility with PE resins',
+      'Reduces cost without compromising quality',
+      'Improves dimensional stability and rigidity',
+      'High dispersion and uniform particle size',
+    ],
+    path: '/products/pecalciumfiller',
+  },
+  {
+    name: 'PP-Based Calcium Filler',
+    image: '../../public/images/PP Polymers.png',
+    description:
+      'PP-Based Calcium Filler improves processing stability, rigidity, and printability for polypropylene-based applications including injection molding and woven sacks.',
+    features: [
+      'Enhances stiffness and surface quality',
+      'Reduces shrinkage and warping',
+      'Compatible with raffia, non-woven, and injection molding',
+      'High thermal stability',
+    ],
+    path: '/products/ppcalciumfiller',
+  },
+  {
+    name: 'HD Based Calcium Filler',
+    image: '../../public/images/hdBased.jpeg',
+    description:
+      'HD-Based Calcium Filler is optimized for high-density polyethylene products, improving mechanical properties and reducing production costs.',
+    features: [
+      'Tailored for HDPE extrusion and blow molding',
+      'Excellent processing and surface finish',
+      'Increases opacity and stiffness',
+      'Minimizes shrinkage and deformation',
+    ],
+    path: '/products/hdcalciumfiller',
+  },
+  {
+    name: 'Sodium Based Transparent Filler',
+    image: '../../public/images/transParent.jpeg',
+    description:
+      'Sodium Based Transparent Filler maintains transparency while enhancing strength and reducing costs, ideal for films and injection molded parts.',
+    features: [
+      'Preserves optical clarity',
+      'Suitable for transparent PP and PE products',
+      'Enhances barrier properties',
+      'Improves processability and mechanical strength',
+    ],
+    path: '/products/sodiumtransparentfiller',
+  },
+  {
+    name: 'Black and White Masterbatch Filler',
+    image: '../../public/images/blackWhite.jpeg',
+    description:
+      'Black and White Masterbatch Filler offers pigmentation and filler benefits, combining color and cost-effectiveness for various plastic applications.',
+    features: [
+      'Strong color performance with high filler content',
+      'UV protection and opacity',
+      'Cost reduction with dual functionality',
+      'Wide compatibility with various resins',
+    ],
+    path: '/products/blackwhitemasterbatchfiller',
+  },
+  {
+    name: 'Desiccant (Anti Moisture) Masterbatch',
+    image: '../../public/images/antiM.jpeg',
+    description:
+      'Desiccant Masterbatch absorbs moisture during processing, ideal for recycled plastics and improving final product quality.',
+    features: [
+      'Removes moisture content during extrusion or molding',
+      'Prevents surface defects like bubbles and pinholes',
+      'Improves mechanical properties',
+      'Easy to use and compatible with PE, PP, and recycled polymers',
+    ],
+    path: '/products/desiccantmasterbatch',
+  },
+  {
+    name: 'OB Masterbatch',
+    image: '../../public/images/obm.jpeg',
+    description:
+      'Optical brightener masterbatch (OB) enhances whiteness and brightness in plastic products. Ideal for PP, PE, and PS-based applications.',
+    features: [
+      'Contains optical brightening agent (OB-1)',
+      'Improves color appeal',
+      'Heat resistant and long-lasting',
+      'Effective in thin films and molded parts',
+    ],
+        path: '/products/obmasterbatch',
+  },
 ];
 
 const Product = () => {

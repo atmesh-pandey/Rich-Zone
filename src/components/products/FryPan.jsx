@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const FryPan = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 pt-24 pb-16 sm:pt-28 sm:pb-20 max-h-screen overflow-hidden">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto py-8 sm:pt-28 sm:pb-20 max-h-screen overflow-hidden">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
         {/* Product Image */}
-        <div className="md:w-1/2 w-full max-h-[90vh] overflow-hidden">
+        <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src='../../public/images/fryPan.png'
             alt="Jenny Stainless Steel Fry Pan"
