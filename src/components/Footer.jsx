@@ -6,6 +6,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaEnvelope,
+  FaArrowUp
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -94,15 +95,25 @@ const Footer = () => {
           <button className="mb-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">Send</button>
           <h3 className="text-xl font-semibold mb-4">Get in touch</h3>
           <div className="flex gap-3">
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-600 text-black hover:text-white"><FaFacebookF /></a>
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-500 text-black hover:text-white"><FaLinkedinIn /></a>
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-red-600 text-black hover:text-white"><FaYoutube /></a>
+            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-600 text-black hover:text-white">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-500 text-black hover:text-white">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-red-600 text-black hover:text-white">
+              <FaYoutube />
+            </a>
+            <a href="#top" className="p-2 bg-gray-200 rounded-full hover:bg-green-600 text-black hover:text-white">
+              <FaArrowUp />
+            </a>
           </div>
+
         </div>
       </div>
       <div className="bg-blue-900 text-white text-center py-4 mt-8">
-      <p>&copy; 2025 Rich Zone. All rights reserved.</p>
-    </div>
+        <p>&copy; 2025 Rich Zone. All rights reserved.</p>
+      </div>
     </footer>
   );
 };

@@ -6,8 +6,8 @@ import Fuse from 'fuse.js';
 const products = [
   { name: 'Kadai', path: '/products/kadai' },
   { name: 'Biryani Pot', path: '/products/biryani-pot' },
-  { name: 'Frypan', path: '/products/frypan' },
-  { name: 'SaucePan', path: '/products/saucepan' },
+  { name: 'Frypan', path: '/products/fry-pan' },
+  { name: 'Sauce Pan', path: '/products/sauce-pan' },
   { name: 'Top', path: '/products/top' },
   { name: 'Tasra', path: '/products/tasra' },
   { name: 'SodiumTransparetFiller', path: '/products/sodiumtransparentfiller'},
