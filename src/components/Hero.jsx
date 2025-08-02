@@ -15,7 +15,7 @@ const slides = [
     image: "https://europlas.com.vn/Data/Sites/1/Banner/1untitled-2.png",
     // title: "Thermal & Acoustic Insulation",
     // subtitle: "Optimized solutions for every industrial need",
-  }
+  },
 ];
 
 const Hero = () => {
@@ -31,10 +31,7 @@ const Hero = () => {
   const { image /*, title, subtitle */ } = slides[currentSlide];
 
   return (
-    <section
-      className="relative w-full h-screen bg-cover bg-center transition-opacity duration-1000 ease-in-out"
-      style={{ backgroundImage: `url('${image}')` }}
-    >
+    <section className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out" style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}>
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-black/30 flex flex-col justify-center items-center px-4 text-white text-center">
         {/* <div className="max-w-4xl">
@@ -47,11 +44,8 @@ const Hero = () => {
           {slides.map((_, index) => (
             <span
               key={index}
-              className={`h-3 w-3 rounded-full transform transition-all duration-300 ${
-                index === currentSlide
-                  ? "scale-125 bg-white shadow-lg"
-                  : "bg-white/50 hover:bg-white/80"
-              }`}
+              onClick={() => setCurrentSlide(index)} // <-- Add this line
+              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-white shadow-lg" : "bg-white/50 hover:bg-white/80"}`}
             ></span>
           ))}
         </div>
