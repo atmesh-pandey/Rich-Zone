@@ -1,51 +1,113 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const slides = [
   {
     image: "/images/banner1.webp",
-    title: <><span className=""><span className="relative text-pink-500" style={{ color: "" }}>India’s</span></span> Leading Manufacturer Filler Masterbatch Solutions</>,
-    // subtitle: "Providing the best plastic insulation solutions across industries",
+    title: (
+      <>
+        <span style={{ width: "60vw" }}>
+          <span className="relative text-pink-500">India’s</span>{" "}
+          Leading Manufacturer Filler Masterbatch Solutions
+        </span>
+      </>
+    ),
+    row: 1,
   },
   {
     image: "/images/banner2.png",
-    title: "Innovating Plastic with Nature in Mind",
-    // subtitle: "Engineered for durability and strength",
+    title: (
+      <span
+        style={{
+          textAlign: "right",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          float: "right",
+          marginRight: "8vw",
+          textShadow: "0 0 1px 10px black",
+        }}
+      >
+        <p>Innovating Plastic</p>
+        <p>with</p>
+        <p>Nature in Mind</p>
+      </span>
+    ),
   },
   {
     image: "/images/banner3.jpg",
-    title: "Driven by Purpose. Delivered with Precision",
-    // subtitle: "Optimized solutions for every industrial need",
+    title: (
+      <span
+        style={{
+          textAlign: "left",
+          display: "grid",
+          marginLeft: "40px",
+          marginTop: "-10vh",
+          textShadow: "0 0 1px 10px black",
+        }}
+      >
+        <p>Driven by Purpose</p>
+        <p>Delivered with Precision</p>
+      </span>
+    ),
   },
 ];
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const intervalRef = useRef(null); // 👈 for storing interval ID
+
+  const startSlider = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
+  };
+
+  const resetSlider = () => {
+    clearInterval(intervalRef.current);
+    startSlider();
+  };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000); // 8s interval
-    return () => clearInterval(interval);
+    startSlider(); // start on mount
+    return () => clearInterval(intervalRef.current); // clear on unmount
   }, []);
 
-  const { image, title, /* subtitle */ } = slides[currentSlide];
+  const { image, title, row } = slides[currentSlide];
 
   return (
-    <section className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out" style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}>
+    <section
+      className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+      style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}
+    >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-black/30 flex flex-col justify-center items-center px-4 text-white text-center">
-        <h1 className="text-5xl md:text-7xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg uppercase w-[60vw] break-words">
+      <div
+        className={`absolute inset-0 bg-gradient-to-r from-black/10 to-black/30 flex flex-col justify-center px-4 text-white text-center ${
+          row === 1 ? "items-center" : ""
+        }`}
+      >
+        <h1
+          className={`text-5xl md:text-7xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg uppercase break-words ${
+            row === 1 ? "w-[60vw]" : ""
+          }`}
+        >
           {title}
         </h1>
 
-
-        {/* Slide Dots at Bottom Center */}
+        {/* Slide Dots */}
         <div className="absolute bottom-8 flex justify-center w-full space-x-3">
           {slides.map((_, index) => (
             <span
               key={index}
-              onClick={() => setCurrentSlide(index)} // <-- Add this line
-              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-white shadow-lg" : "bg-white/50 hover:bg-white/80"}`}
+              onClick={() => {
+                setCurrentSlide(index); // change slide
+                resetSlider(); // 👈 reset timer
+              }}
+              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${
+                index === currentSlide
+                  ? "scale-125 bg-white shadow-lg"
+                  : "bg-white/50 hover:bg-white/80"
+              }`}
             ></span>
           ))}
         </div>
