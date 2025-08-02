@@ -27,7 +27,7 @@ function App() {
       <Hero />
       <Heart />
       <Explanation />
-      {/* <Country /> */}
+      <Country />
       <Advantages />
       {/* <Blog /> */}
       <Contact />
