@@ -25,7 +25,7 @@ const Gsap = () => {
     <div className="relative w-full overflow-hidden">
       <div
         ref={textRef}
-        className="flex whitespace-nowrap text-black text-8xl font-bold"
+        className="flex whitespace-nowrap text-[color:#9BC936] text-8xl font-bold"
         style={{ willChange: "transform" }}
       >
         {/* Repeat text twice for seamless scroll */}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const slides = [
   {
-    image: "./images/banner1.webp",
+    image: "/images/banner1.webp",
     // title: "Top Industrial Insulation Materials",
     // subtitle: "Providing the best plastic insulation solutions across industries",
   },

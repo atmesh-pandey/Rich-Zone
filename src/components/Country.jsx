@@ -11,14 +11,14 @@ const Country = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
         style={{
-          backgroundImage: "url('/images/calciumCarbonate.png')",
+          backgroundImage: "url('/images/calciumCarbonate.pn')",
           opacity: 0.85,
         }}
       ></div>
 
       {/* Overlay Content - Centered */}
       <div className="relative z-10 flex items-center justify-center w-full h-full px-4">
-        <div className="w-full max-w-7xl text-center">
+        <div className="w-full text-center">
           <Gsap />
         </div>
       </div>

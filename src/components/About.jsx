@@ -7,7 +7,7 @@ const About = () => {
       {/* Banner Image */}
       <img
         className="w-full h-[40vh] object-cover"
-        src="../../public/images/aboutImage.png" // Replace with actual image path
+        src="/images/aboutImage.png" // Replace with actual image path
         alt="Banner"
       />
 

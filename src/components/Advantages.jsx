@@ -27,7 +27,7 @@ const Advantage = () => {
         {/* Right Video */}
         <div className="w-full lg:w-[55%] h-[250px] md:h-[400px] mt-8 lg:h-[450px] flex items-center justify-center bg-black rounded-sm overflow-hidden shadow-lg">
           <video
-            src='../../public/videos/video.mp4'
+            src='./videos/video.mp4'
             loop
             muted
             autoPlay

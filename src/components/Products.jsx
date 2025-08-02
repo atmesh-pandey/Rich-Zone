@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const products = [
     {
         name: 'Cookware – Kadai',
-        image: '../../public/images/kadai.png',
+        image: '/images/kadai.png',
         description: "Durable tri-ply stainless steel kadai for fast, even heating. Features a cool-touch handle, induction & gas-compatible base, and a stainless steel lid for better heat retention. Perfect for everyday cooking.",
         features: [
             'Material: Tri-Ply Stainless Steel',
@@ -16,7 +16,7 @@ const products = [
     },
     {
         name: 'Biryani Pot',
-        image: '../../public/images/biryaniPoat.png',
+        image: '/images/biryaniPoat.png',
         description:
             'Perfectly crafted for authentic biryani cooking, this premium stainless steel pot offers durability and excellent heat distribution for rich, flavorful meals.',
         features: [
@@ -31,7 +31,7 @@ const products = [
     },
     {
         name: 'Fry Pan',
-        image: '../../public/images/fryPan.png',
+        image: '/images/fryPan.png',
         description:
             'The Jenny® Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.',
         features: [
@@ -44,7 +44,7 @@ const products = [
     },
     {
         name: 'Sauce Pan',
-        image: '../../public/images/pan.png',
+        image: '/images/pan.png',
         description:
             'The Jenny® Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.',
         features: [
@@ -57,7 +57,7 @@ const products = [
     },
     {
         name: 'Top',
-        image: '../../public/images/top.png',
+        image: '/images/top.png',
         description:
             'The Jenny® Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.',
         features: [
@@ -71,7 +71,7 @@ const products = [
     },
     {
         name: 'Tasra',
-        image: '../../public/images/tasla.png',
+        image: '/images/tasla.png',
         description:
             'The Jenny® Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.',
         features: [
@@ -84,7 +84,7 @@ const products = [
     },
   {
     name: 'PE-Based Calcium Filler',
-    image: '../../public/images/pePollemer.png',
+    image: '/images/pePollemer.png',
     description:
       'PE-Based Calcium Filler is specially designed for polyethylene-based products like films, injection molding, and blow molding. It enhances stiffness and reduces production costs.',
     features: [
@@ -97,7 +97,7 @@ const products = [
   },
   {
     name: 'PP-Based Calcium Filler',
-    image: '../../public/images/PP Polymers.png',
+    image: '/images/PP Polymers.png',
     description:
       'PP-Based Calcium Filler improves processing stability, rigidity, and printability for polypropylene-based applications including injection molding and woven sacks.',
     features: [
@@ -110,7 +110,7 @@ const products = [
   },
   {
     name: 'HD Based Calcium Filler',
-    image: '../../public/images/hdBased.jpeg',
+    image: '/images/hdBased.jpeg',
     description:
       'HD-Based Calcium Filler is optimized for high-density polyethylene products, improving mechanical properties and reducing production costs.',
     features: [
@@ -123,7 +123,7 @@ const products = [
   },
   {
     name: 'Sodium Based Transparent Filler',
-    image: '../../public/images/transParent.jpeg',
+    image: '/images/transParent.jpeg',
     description:
       'Sodium Based Transparent Filler maintains transparency while enhancing strength and reducing costs, ideal for films and injection molded parts.',
     features: [
@@ -136,7 +136,7 @@ const products = [
   },
   {
     name: 'Black and White Masterbatch Filler',
-    image: '../../public/images/blackWhite.jpeg',
+    image: '/images/blackWhite.jpeg',
     description:
       'Black and White Masterbatch Filler offers pigmentation and filler benefits, combining color and cost-effectiveness for various plastic applications.',
     features: [
@@ -149,7 +149,7 @@ const products = [
   },
   {
     name: 'Desiccant (Anti Moisture) Masterbatch',
-    image: '../../public/images/antiM.jpeg',
+    image: '/images/antiM.jpeg',
     description:
       'Desiccant Masterbatch absorbs moisture during processing, ideal for recycled plastics and improving final product quality.',
     features: [
@@ -162,7 +162,7 @@ const products = [
   },
   {
     name: 'OB Masterbatch',
-    image: '../../public/images/obm.jpeg',
+    image: '/images/obm.jpeg',
     description:
       'Optical brightener masterbatch (OB) enhances whiteness and brightness in plastic products. Ideal for PP, PE, and PS-based applications.',
     features: [

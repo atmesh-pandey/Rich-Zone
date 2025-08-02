@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const BiryaniPot = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 sm:pb-20 max-h-screen overflow-hidden">
+    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 max-h-screen overflow-hidden">
       <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='../../public/images/biryaniPoat.png'
+            src='/images/biryaniPoat.png'
             alt="Premium Biryani Pot"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }} // fallback inline style for image height limit
@@ -66,8 +66,8 @@ const BiryaniPot = () => {
           </div> */}
 
           <div className="flex flex-col sm:flex-row gap-2 -mt-4">
-            <Link
-              to="/products"
+            <button
+              onClick={() => window.history.back()}
               className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded text-center transition duration-300 flex items-center justify-center gap-1 text-sm"
             >
               <svg
@@ -82,7 +82,7 @@ const BiryaniPot = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
               Back
-            </Link>
+            </button>
           </div>
         </div>
       </div>

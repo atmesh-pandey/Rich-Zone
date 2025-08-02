@@ -10,6 +10,14 @@ const products = [
   { name: 'SaucePan', path: '/products/saucepan' },
   { name: 'Top', path: '/products/top' },
   { name: 'Tasra', path: '/products/tasra' },
+  { name: 'SodiumTransparetFiller', path: '/products/sodiumtransparentfiller'},
+  { name: 'pecalciumfiller', path: "/products/pecalciumfiller"},
+  { name: 'ppcalciumfiller', path: "/products/ppcalciumfiller"},
+  { name: 'hdcalciumfiller', path: "/products/hdcalciumfiller"},
+  { name: 'blackwhitemasterbatchfiller', path: "/products/blackwhitemasterbatchfiller"},
+  { name: 'desiccantmasterbatch', path: "/products/desiccantmasterbatch"},
+  { name: 'obmasterbatch', path: "/products/obmasterbatch"}
+
 ];
 
 // Fuse.js config
