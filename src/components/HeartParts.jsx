@@ -1,10 +1,10 @@
 import React from "react";
 
-const HeartParts = ({ title, description, image, index }) => {
+const HeartParts = ({ title, description, image, index, onClickHandler }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className="relative bg-white rounded-lg overflow-hidden transition duration-300 group">
+    <div onClick={onClickHandler} className="relative bg-white rounded-lg overflow-hidden transition duration-300 group">
       <div className="overflow-hidden rounded-t-lg">
         <img src={image} alt="Heart Image" className="w-full h-112 object-cover transform scale-100 transition-transform duration-500 group-hover:scale-120" />
       </div>

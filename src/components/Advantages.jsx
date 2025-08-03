@@ -1,8 +1,9 @@
 import React from 'react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Advantage = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-4 py-10" style={{ backgroundColor: "#9BC936" }}>
+    <div className="w-full min-h-screen flex items-center justify-center px-4 py-10" style={{ backgroundColor: "#9ac936" }}>
       <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl gap-12">
         {/* Left Content */}
         <div className="flex flex-col text-white space-y-12 w-full lg:max-w-[45%]">
@@ -25,9 +26,9 @@ const Advantage = () => {
         </div>
 
         {/* Right Video */}
-        <div className="w-full lg:w-[55%] h-[250px] md:h-[400px] mt-8 lg:h-[450px] flex items-center justify-center bg-black rounded-sm overflow-hidden shadow-lg">
-          <video
-            src='./videos/video.mp4'
+        <div className="w-full lg:w-[55%] h-[250px] md:h-[400px] mt-8 lg:h-[450px] flex items-center justify-center rounded-sm overflow-hidden">
+          {/* <video
+            src='./images/industries.webm'
             loop
             muted
             autoPlay
@@ -35,6 +36,12 @@ const Advantage = () => {
             playsInline
             poster="your-thumbnail.jpg"
             className="w-full h-full object-cover"
+          /> */}
+          <DotLottieReact
+            src="https://lottie.host/1e4ff190-0e9f-4f88-a44b-d02f1f03aa48/vVuL0JXmSl.lottie"
+            loop
+            autoplay
+            style={{ filter: "drop-shadow(2px 4px 6px yellow)" }}
           />
         </div>
       </div>

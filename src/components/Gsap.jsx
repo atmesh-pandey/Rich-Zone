@@ -25,8 +25,9 @@ const Gsap = ({ textArr, dir }) => {
     <div className="overflow-hidden w-full">
       <div
         ref={marqueeRef}
-        className="flex whitespace-nowrap text-8xl font-bold"
+        className="flex whitespace-nowrap font-bold"
         style={{
+          fontSize: "136px",
           color:
             dir === 1
               ? "rgb(17, 63, 103)"

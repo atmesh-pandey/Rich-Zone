@@ -39,11 +39,15 @@ const slides = [
     title: (
       <span
         style={{
-          textAlign: "left",
+          textAlign: "center",
           display: "grid",
           marginLeft: "40px",
           marginTop: "-10vh",
-          textShadow: "0 0 1px 10px black",
+          textShadow: `-2px -2px 0 #888,
+            2px -2px 0 #888,
+            -2px  2px 0 #888,
+            2px  2px 0 #888,
+            0    0  10px #888`,
         }}
       >
         <p>Driven by Purpose</p>
@@ -76,23 +80,10 @@ const Hero = () => {
   const { image, title, row } = slides[currentSlide];
 
   return (
-    <section
-      className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
-      style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}
-    >
+    <section className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out" style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}>
       {/* Gradient Overlay */}
-      <div
-        className={`absolute inset-0 bg-gradient-to-r from-black/10 to-black/30 flex flex-col justify-center px-4 text-white text-center ${
-          row === 1 ? "items-center" : ""
-        }`}
-      >
-        <h1
-          className={`text-5xl md:text-7xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg uppercase break-words ${
-            row === 1 ? "w-[60vw]" : ""
-          }`}
-        >
-          {title}
-        </h1>
+      <div className={`absolute inset-0 bg-gradient-to-r from-black/10 to-black/30 flex flex-col justify-center px-4 text-white text-center ${row === 1 ? "items-center" : ""}`}>
+        <h1 className={`text-5xl md:text-7xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg uppercase break-words ${row === 1 ? "w-[60vw]" : ""}`}>{title}</h1>
 
         {/* Slide Dots */}
         <div className="absolute bottom-8 flex justify-center w-full space-x-3">
@@ -103,11 +94,7 @@ const Hero = () => {
                 setCurrentSlide(index); // change slide
                 resetSlider(); // 👈 reset timer
               }}
-              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${
-                index === currentSlide
-                  ? "scale-125 bg-white shadow-lg"
-                  : "bg-white/50 hover:bg-white/80"
-              }`}
+              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-white shadow-lg" : "bg-white/50 hover:bg-white/80"}`}
             ></span>
           ))}
         </div>
