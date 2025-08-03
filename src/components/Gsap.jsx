@@ -14,7 +14,7 @@ const Gsap = ({ textArr, dir }) => {
       },
       {
         x: dir === 0 || dir === 2 ? "-100%" : "100%",
-        duration: 15,
+        duration: 24,
         ease: "none",
         repeat: -1,
       }
@@ -25,7 +25,7 @@ const Gsap = ({ textArr, dir }) => {
     <div className="overflow-hidden w-full">
       <div
         ref={marqueeRef}
-        className="flex whitespace-nowrap font-bold"
+        className="flex whitespace-nowrap font-bold uppercase"
         style={{
           fontSize: "clamp(1rem, 5vw, 8rem)",
           color:
