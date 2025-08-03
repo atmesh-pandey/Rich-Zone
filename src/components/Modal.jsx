@@ -1,46 +1,53 @@
-// Modal.jsx
 import React from "react";
 import items from "../utils/data";
 
 const Modal = ({ isOpen, setIsOpen, data }) => {
-  console.log(data);
   if (!isOpen || data.length < 1) return null;
 
   const selectedItems = items[data[0]][data[1]];
-  console.log(selectedItems);
 
   const handleClose = () => {
     setIsOpen(false);
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50" onClick={handleClose}>
+    <div
+      className="fixed inset-0 bg-black/50 flex justify-center items-center z-50"
+      onClick={handleClose}
+    >
       <div
-        className="bg-white p-6 rounded shadow-lg max-w-lg w-full"
-        onClick={(e) => e.stopPropagation()} // prevent closing on content click
+        className=" bg-white rounded w-[50vw] max-w-full p-8 flex gap-8 relative"
+        onClick={(e) => e.stopPropagation()}
       >
-        <button className="float-right text-gray-500 hover:text-gray-700" onClick={handleClose}>
+        {/* Close Button just after box starts */}
+        <button
+          onClick={handleClose}
+          className="absolute top-2 right-2 text-white bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-700"
+        >
           ✕
         </button>
-        <div key={data} className="rounded-lg shadow hover:shadow-lg transition p-8 space-y-2">
-          <div className="w-full h-[50vh] rounded overflow-hidden relative">
-            <img src={selectedItems.image} alt={selectedItems.title} className="absolute inset-0 w-full h-full object-cover" />
-          </div>
 
-          <h2 className="text-2xl font-semibold text-pink-500">{selectedItems.title}</h2>
-          <p className="text-gray-700">{selectedItems.description}</p>
+        {/* Image container */}
+        <div className="w-1/2 h-[50vh] rounded overflow-hidden relative">
+          <img
+            src={selectedItems.image}
+            alt={selectedItems.title}
+            className="w-full h-full object-cover rounded"
+          />
+        </div>
+
+        {/* Content container */}
+        <div className="w-1/2 flex flex-col justify-start space-y-4">
+          <h2 className="text-3xl font-bold text-[color:#9BC936]">
+            {selectedItems.title}
+          </h2>
+          <p className="text-gray-700 font-semibold">{selectedItems.description}</p>
           <ul className="list-disc pl-5 space-y-1 text-gray-600">
             {selectedItems?.features?.map((feature, i) => (
               <li key={i}>{feature}</li>
             ))}
           </ul>
-          {/* <div className="text-right">
-            <Link to={product.path} className="inline-block mt-4 bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded">
-              📦 All Details
-            </Link>
-          </div> */}
         </div>
-        {/* <div>{selectedItems}</div> */}
       </div>
     </div>
   );

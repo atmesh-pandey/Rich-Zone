@@ -178,7 +178,7 @@ const products = [
 const Product = () => {
   return (
     <div className=" font-sans py-10 px-4 md:px-12">
-      <h1 className="text-4xl font-bold text-center text-pink-600 mb-12">
+      <h1 className="text-4xl font-bold text-center text-[color:#9BC936] mb-12">
         Masterbatches & Filler Products
       </h1>
 
@@ -198,7 +198,7 @@ const Product = () => {
             </div>
 
 
-            <h2 className="text-2xl font-semibold text-pink-500">{product.name}</h2>
+            <h2 className="text-2xl font-semibold text-[color:#9BC936]">{product.name}</h2>
             <p className="text-gray-700">{product.description}</p>
             <ul className="list-disc pl-5 space-y-1 text-gray-600">
               {product.features.map((feature, i) => (
@@ -208,7 +208,7 @@ const Product = () => {
             <div className="text-right">
               <Link
                 to={product.path}
-                className="inline-block mt-4 bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded"
+                className="inline-block mt-4 bg-[color:#9BC936] hover:bg-[color:#85b02f] transition hover:scale-105 text-white font-medium py-2 px-4 rounded"
               >
                 📦 All Details
               </Link>
