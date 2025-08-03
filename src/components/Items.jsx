@@ -15,22 +15,6 @@ const Items = () => {
           Export Whole Spices & Others
         </a>
       </div>
-
-      {/* Target Sections
-      <div id="plastic" className="py-10">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Plastic Raw Material</h2>
-        <p className="text-gray-600">Details about plastic raw materials...</p>
-      </div> */}
-
-      {/* <div id="steel" className="py-10">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Steel Processing</h2>
-        <p className="text-gray-600">Information about steel processing...</p>
-      </div> */}
-
-      {/* <div id="spices" className="py-10">
-        <h2 className="text-xl font-bold text-gray-800 mb-2">Export Whole Spices & Others</h2>
-        <p className="text-gray-600">Export details and other information...</p>
-      </div> */}
     </div>
   );
 };
