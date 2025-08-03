@@ -38,7 +38,7 @@ function App() {
       <Explanation />
       {/* <Country /> */}
       <Advantages />
-      <Catagory />
+      {/* <Catagory /> */}
       <Contact />
       <Footer />
     </>
