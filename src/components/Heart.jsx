@@ -101,6 +101,7 @@ const Heart = () => {
                             title={title}
                             description={description}
                             index={index}
+                            onClickHandler={() => handleCardSelection(0, index)}
                         />
                     ))}
                 </div>
@@ -125,6 +126,7 @@ const Heart = () => {
                             title={title}
                             description={description}
                             index={index}
+                            onClickHandler={() => handleCardSelection(1, index)}
                         />
                     ))}
                 </div>
@@ -152,6 +154,7 @@ const Heart = () => {
                             title={title}
                             description={description}
                             index={index}
+                            onClickHandler={() => handleCardSelection(2, index)}
                         />
                     ))}
                 </div>
