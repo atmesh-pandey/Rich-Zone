@@ -6,7 +6,7 @@ const slides = [
     title: (
       <>
         <span style={{ width: "60vw" }}>
-          <span className="relative text-pink-500">India’s</span>{" "}
+          <span className="relative text-[color:#9BC936]">India’s</span>{" "}
           Leading Manufacturer Filler Masterbatch Solutions
         </span>
       </>

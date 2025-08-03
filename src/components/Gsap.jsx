@@ -1,41 +1,45 @@
 import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import gsap from "gsap";
 
-const Gsap = () => {
-  const textRef = useRef(null);
+const Gsap = ({ textArr, dir }) => {
+  const marqueeRef = useRef();
 
   useEffect(() => {
-    const element = textRef.current;
-    const width = element.scrollWidth;
+    const el = marqueeRef.current;
 
-    // Animate text from right to left continuously
     gsap.fromTo(
-      element,
-      { x: 0 },
+      el,
       {
-        x: -width / 2,
+        x: dir === 0 || dir === 2 ? "100%" : "-100%",
+      },
+      {
+        x: dir === 0 || dir === 2 ? "-100%" : "100%",
+        duration: 15,
         ease: "none",
-        duration: 20,
         repeat: -1,
       }
     );
-  }, []);
+  }, [dir]);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="overflow-hidden w-full">
       <div
-        ref={textRef}
-        className="flex whitespace-nowrap text-[color:#9BC936] text-8xl font-bold"
-        style={{ willChange: "transform" }}
+        ref={marqueeRef}
+        className="flex whitespace-nowrap text-8xl font-bold"
+        style={{
+          color:
+            dir === 1
+              ? "rgb(17, 63, 103)"
+              : dir === 2
+              ? "rgb(255, 204, 0)"
+              : "#9BC936",
+        }}
       >
-        {/* Repeat text twice for seamless scroll */}
-        <span className="mr-10">PE-Based Calcium Filler&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">PP-Based Calcium Filler&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">HD Based Calcium Filler&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">Sodium Based Transparent Filler&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">Black and White Masterbatch Filler&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">Desiccant (Anti Moisture) Masterbatch&nbsp;&nbsp;&nbsp;</span>
-        <span className="mr-10">OB Masterbatch&nbsp;&nbsp;&nbsp;</span>
+        {textArr.map((item, index) => (
+          <span key={index} className="mr-10">
+            {item}&nbsp;&nbsp;&nbsp;
+          </span>
+        ))}
       </div>
     </div>
   );
