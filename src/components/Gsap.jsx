@@ -27,7 +27,7 @@ const Gsap = ({ textArr, dir }) => {
         ref={marqueeRef}
         className="flex whitespace-nowrap font-bold"
         style={{
-          fontSize: "136px",
+          fontSize: "clamp(1rem, 5vw, 8rem)",
           color:
             dir === 1
               ? "rgb(17, 63, 103)"

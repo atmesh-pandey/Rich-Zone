@@ -14,7 +14,7 @@ const slides = [
     row: 1,
   },
   {
-    image: "/images/banner2.png",
+    image: "/images/banner2.jpg",
     title: (
       <span
         style={{
@@ -28,9 +28,9 @@ const slides = [
           textShadow: "0 0 1px 10px black",
         }}
       >
-        <p>Innovating Plastic</p>
+        {/* <p>Innovating Plastic</p>
         <p>with</p>
-        <p>Nature in Mind</p>
+        <p>Nature in Mind</p> */}
       </span>
     ),
   },

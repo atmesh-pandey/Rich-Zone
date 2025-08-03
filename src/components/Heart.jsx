@@ -80,6 +80,7 @@ const Heart = () => {
           in the import and supply of high-quality filler masterbatches and plastic raw materials, including LDPE, PP polymers (virgin and recycled), and calcium-based compounds. Delivering tailored
           material solutions to manufacturers across industries—ensuring consistency, cost-effectiveness, and performance in every product created.
         </div>
+        <PlasticRawMeterial />
         <div className="py-8">
           <Gsap textArr={marqueeArr[0]} dir={0} />
         </div>
@@ -106,8 +107,8 @@ const Heart = () => {
                     ))}
                 </div>
             </div>
-            <PlasticRawMeterial />
-            <div className='py-18'>
+            <StillnessStillProcessing />
+            <div className='pb-8'>
                 <Gsap textArr={marqueeArr[1]} dir={1} />
             </div>
             <div
@@ -132,10 +133,9 @@ const Heart = () => {
                 </div>
             </div>
 
-            <StillnessStillProcessing />
-
             {/* category 3 */}
-            <div className='py-18'>
+            <ExportWholeSpices />
+            <div className='py-8'>
                 <Gsap textArr={marqueeArr[2]} dir={2} />
             </div>
             <div
@@ -159,8 +159,6 @@ const Heart = () => {
                     ))}
                 </div>
             </div>
-
-            <ExportWholeSpices />
 
         {/* Toggle Button */}
         {items.length > 4 && (
