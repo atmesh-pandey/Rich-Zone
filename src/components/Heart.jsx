@@ -2,6 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import HeartParts from './HeartParts';
 import items from '../utils/data';
 import Gsap from './Gsap';
+import Catagory from './Catagory';
+import PlasticRawMeterial from './PlasticRawMeterial';
+import StillnessStillProcessing from './StillnessStillProcessing';
+import ExportWholeSpices from './ExportWholeSpices';
 
 const marqueeArr = [
     [
@@ -22,13 +26,10 @@ const marqueeArr = [
         "Tasra"
     ],
     [
-        "PE-Based Calcium Filler",
-        "PP-Based Calcium Filler",
-        "HD Based Calcium Filler",
-        "Sodium Based Transparent Filler",
-        "Black and White Masterbatch Filler",
-        "Desiccant (Anti Moisture) Masterbatch",
-        "OB Masterbatch"
+        "Chilli (Whole) & Other Spices",
+        "Non-Woven Bags",
+        "Tissue Paper",
+        "Disposables",
     ]
 ]
 
@@ -94,6 +95,7 @@ const Heart = () => {
                     ))}
                 </div>
             </div>
+            <PlasticRawMeterial />
             <div className='py-18'>
                 <Gsap textArr={marqueeArr[1]} dir={1} />
             </div>
@@ -117,6 +119,8 @@ const Heart = () => {
                     ))}
                 </div>
             </div>
+
+            <StillnessStillProcessing />
 
             {/* category 3 */}
             <div className='py-18'>
@@ -143,6 +147,7 @@ const Heart = () => {
                 </div>
             </div>
 
+            <ExportWholeSpices />
 
             {/* Toggle Button */}
             {items.length > 4 && (

@@ -25,17 +25,20 @@ import SodiumTransparentFiller from './components/products/SodiumTransparentFill
 import BlackWhiteMasterbatchFiller from './components/products/BlackWhiteMasterbatchFiller';
 import DesiccantMasterbatch from './components/products/DesiccantMasterbatch';
 import OBMasterbatch from './components/products/OBMasterbatch';
+import Catagory from './components/Catagory';
+import Items from './components/Items';
 
 function App() {
 
   const Home = () => (
     <>
       <Hero />
+      <Items/> 
       <Heart />
       <Explanation />
       {/* <Country /> */}
       <Advantages />
-      {/* <Blog /> */}
+      <Catagory />
       <Contact />
       <Footer />
     </>
@@ -48,8 +51,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/category" element={<Catagory />} />
         <Route path="/products" element={<Products />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/products/kadai" element={<Kadai />} />
