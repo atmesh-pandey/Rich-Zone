@@ -19,7 +19,7 @@ const About = () => {
           <div className="text-red-600 font-bold text-7xl leading-none">“</div>
           <p className="text-xl font-semibold leading-relaxed">
             We are an{' '}
-            <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-pink-500">
+            <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-[color:#9BC936]">
               <span className="relative text-white">international</span>
             </span>{' '}
             export-import conglomerate specializing in plastic raw materials, filler masterbatches, and stainless steel processing. With years of experience
@@ -35,7 +35,7 @@ const About = () => {
 
         {/* Vision */}
         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 text-pink-600">🌐 Our Vision</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936]">🌐 Our Vision</h1>
           <p className="text-lg leading-relaxed">
             To be a globally trusted sourcing partner, enabling manufacturers to access reliable material solutions while promoting sustainability, quality, and innovation across the supply chain.
           </p>
@@ -43,7 +43,7 @@ const About = () => {
 
         {/* Mission */}
         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 text-pink-600">🎯 Our Mission</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936]">🎯 Our Mission</h1>
           <ul className="list-disc pl-6 space-y-2 text-lg">
             <li>Deliver dependable, high-performance raw materials that enhance product quality.</li>
             <li>Build efficient, responsive supply chains through global partnerships.</li>
@@ -54,7 +54,7 @@ const About = () => {
 
         {/* Offerings */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 text-pink-600">🧩 What We Offer</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936]">🧩 What We Offer</h1>
           <ol className="list-decimal pl-6 text-lg space-y-4">
             <li className="font-bold">Plastic Raw Materials</li>
             <ul className="list-disc pl-6 space-y-2">
@@ -85,7 +85,7 @@ const About = () => {
 
         {/* Why Work With Us */}
         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 text-pink-600">🌍 Why Work With Us</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936]">🌍 Why Work With Us</h1>
           <ul className="list-disc pl-6 space-y-2 text-lg">
             <li><strong>Global Reach:</strong> Long-standing supplier relationships in Asia, the Middle East, and beyond</li>
             <li><strong>Consistent Quality:</strong> Strict quality control standards at every step</li>
@@ -97,7 +97,7 @@ const About = () => {
 
         {/* Collaboration */}
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 text-pink-600">🤝 Let’s Collaborate</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936]">🤝 Let’s Collaborate</h1>
           <p className="text-lg mb-2">
             Our goal is to be more than just a material supplier—we aim to be a strategic partner in your production success. 
             Whether you are developing new products or streamlining your current sourcing strategy, we provide the materials, expertise, and reliability to help you grow.

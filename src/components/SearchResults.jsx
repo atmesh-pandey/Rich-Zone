@@ -51,7 +51,7 @@ const SearchResults = () => {
             <li key={index}>
               <Link
                 to={product.path}
-                className="text-lg text-pink-600 hover:text-pink-700 font-medium underline"
+                className="text-lg text-[color:#9BC936] font-medium underline"
               >
                 {product.name}
               </Link>

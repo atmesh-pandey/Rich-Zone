@@ -25,6 +25,7 @@ const OBMasterbatch = () => {
               Optical brightener masterbatch (OB) enhances whiteness and brightness in plastic products. Ideal for PP, PE, and PS-based applications.
             </p>
 
+            {/* Key Features */}
             <div className="mb-5">
               <h2 className="text-lg font-semibold text-gray-700 mb-2">✨ Key Features:</h2>
               <ul className="space-y-1.5 text-sm text-gray-700 list-disc list-inside">
@@ -32,6 +33,18 @@ const OBMasterbatch = () => {
                 <li>Improves color appeal</li>
                 <li>Heat resistant and long-lasting</li>
                 <li>Effective in thin films and molded parts</li>
+              </ul>
+            </div>
+
+            {/* Applications */}
+            <div className="mb-5">
+              <h2 className="text-lg font-semibold text-gray-700 mb-2">📦 Applications:</h2>
+              <ul className="space-y-1.5 text-sm text-gray-700 list-disc list-inside">
+                <li>Plastic packaging films</li>
+                <li>Household plastic items</li>
+                <li>Injection molded containers</li>
+                <li>Blow-molded bottles</li>
+                <li>Plastic fibers and woven sacks</li>
               </ul>
             </div>
           </div>

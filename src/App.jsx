@@ -38,7 +38,6 @@ function App() {
       <Explanation />
       {/* <Country /> */}
       <Advantages />
-      {/* <Catagory /> */}
       <Contact />
       <Footer />
     </>

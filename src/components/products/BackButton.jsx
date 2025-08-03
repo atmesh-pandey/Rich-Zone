@@ -6,7 +6,7 @@ const BackButton = () => {
             <div className="flex flex-col sm:flex-row gap-2 -mt-4">
                 <button
                     onClick={() => window.history.back()}
-                    className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded text-center transition duration-300 flex items-center justify-center gap-1 text-sm"
+                    className="bg-[color:#9BC936] hover:bg-[color:#85b02f] hover:scale-105 text-white font-semibold py-2 px-6 rounded text-center transition duration-300 flex items-center justify-center gap-1 text-sm"
                 >
                     <svg
                         className="w-4 h-4"
