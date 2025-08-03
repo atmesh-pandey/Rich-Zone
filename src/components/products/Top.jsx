@@ -9,7 +9,7 @@ const Top = () => {
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='/images/top.png' // Replace with actual image path
+            src='/images/top.jpg' // Replace with actual image path
             alt="Jenny Stainless Steel Tope"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}

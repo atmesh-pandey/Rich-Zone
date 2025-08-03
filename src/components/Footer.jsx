@@ -11,19 +11,19 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" text-black py-4 px-6 w-full" style={{ backgroundColor: "#eee" }}>
+    <footer className="text-black py-6 px-6 w-full bg-[#eee]">
       {/* Company Name + Divider */}
-      <div className="text-start mb-2">
-        <h1 className="py-8 px-8 text-2xl font-bold uppercase text-red-600">
+      <div className="mb-6 px-2">
+        <h1 className="text-2xl font-bold uppercase text-red-600">
           Rich Zone WorldWide Limited
         </h1>
-        <hr className="mt-1 border-gray-400 w-2 mx-auto" />
+        <hr className="mt-2 border-gray-400 w-8" />
       </div>
 
-      {/* Main Footer Grid */}
-      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[repeat(10,minmax(0,1fr))] gap-4">
+      {/* Responsive grid: 1 col mobile, 2 cols sm, 3 cols md, 5 cols lg */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-2">
         {/* About Us */}
-        <div className="col-span-full md:col-span-1 px-8">
+        <div>
           <h2 className="text-xl font-semibold mb-4">About Us</h2>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>Mission - Vision</li>
@@ -32,11 +32,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-gray-300 h-full mx-auto col-span-1" />
-
         {/* Products */}
-        <div className="col-span-full md:col-span-1" style={{ width: "max-content" }}>
+        <div>
           <h3 className="text-xl font-semibold mb-4">Products</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li>PE-Based Calcium Filler</li>
@@ -49,11 +46,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-gray-300 h-full mx-auto col-span-1" />
-
         {/* Quick Links */}
-        <div className="col-span-full md:col-span-1">
+        <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-gray-700">
             <li><a href="#" className="hover:text-amber-600">About Us</a></li>
@@ -63,55 +57,59 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-gray-300 h-full mx-auto col-span-1" />
-
         {/* Contact Info */}
-        <div className="col-span-full md:col-span-1">
+        <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-4 text-sm text-gray-700">
             <li className="flex items-start gap-3">
               <FaMapMarkerAlt className="mt-1 text-3xl" />
-              <span>RICHZONE WORLWIDE PVT LTD, No 57/A, Ground floor, 5th main, Behind Lila Pa, H.A.L ll Stage, Bangalore, KARNATAKA 560008</span>
+              <span>
+                RICHZONE WORLWIDE PVT LTD, No 57/A, Ground floor, 5th main, Behind Lila Pa, H.A.L ll Stage, Bangalore, KARNATAKA 560008
+              </span>
             </li>
-            <li className="flex items-start gap-3">
-              <FaPhoneAlt className="mt-1" />
+            <li className="flex items-center gap-3">
+              <FaPhoneAlt />
               <span>Tel: (+91) 8296217773</span>
             </li>
-            <li className="flex items-start gap-3">
-              <FaEnvelope className="mt-1" />
+            <li className="flex items-center gap-3">
+              <FaEnvelope />
               <span>Email: sales@myrichzone.com</span>
             </li>
           </ul>
         </div>
 
-        {/* Divider */}
-        <div className="hidden md:block w-px bg-gray-300 h-full mx-auto col-span-1" />
-
-        {/* Subscribe / Follow Us */}
-        <div className="col-span-full md:col-span-1 w-full md:w-[400px] lg:w-[300px] p-4 rounded-lg">
+        {/* Subscribe + Social */}
+        <div>
           <h3 className="text-xl font-semibold mb-4">Subscribe to our newsletter</h3>
-          <input type="text" className="px-4 w-full mb-4 border rounded-md py-2" placeholder="Your email" />
-          <button className="mb-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">Send</button>
-          <h3 className="text-xl font-semibold mb-4">Get in touch</h3>
-          <div className="flex gap-3">
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-600 text-black hover:text-white">
+          <input
+            type="text"
+            className="w-full rounded-md border border-gray-400 px-4 py-2 mb-4"
+            placeholder="Your email"
+          />
+          <button className="w-full px-6 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">
+            Send
+          </button>
+
+          <h3 className="text-xl font-semibold mt-8 mb-4">Get in touch</h3>
+          <div className="flex gap-4">
+            <a href="#" className="p-3 bg-gray-200 rounded-full text-black hover:bg-blue-600 hover:text-white transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-blue-500 text-black hover:text-white">
+            <a href="#" className="p-3 bg-gray-200 rounded-full text-black hover:bg-blue-500 hover:text-white transition">
               <FaLinkedinIn />
             </a>
-            <a href="#" className="p-2 bg-gray-200 rounded-full hover:bg-red-600 text-black hover:text-white">
+            <a href="#" className="p-3 bg-gray-200 rounded-full text-black hover:bg-red-600 hover:text-white transition">
               <FaYoutube />
             </a>
-            <a href="#top" className="p-2 bg-gray-200 rounded-full hover:bg-green-600 text-black hover:text-white">
+            <a href="#top" className="p-3 bg-gray-200 rounded-full text-black hover:bg-green-600 hover:text-white transition">
               <FaArrowUp />
             </a>
           </div>
-
         </div>
       </div>
-      <div className="bg-[color:#9BC936] text-white text-center py-4 mt-8">
+
+      {/* Footer Bottom */}
+      <div className="bg-[#9BC936] text-white text-center py-4 mt-12 text-sm sm:text-base">
         <p>&copy; 2025 Rich Zone. All rights reserved.</p>
       </div>
     </footer>
