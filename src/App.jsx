@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 import './App.css'; // Assuming you have a CSS file for global style
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -29,6 +30,7 @@ import Catagory from './components/Catagory';
 import Items from './components/Items';
 
 function App() {
+  const location = useLocation();
 
   const Home = () => (
     <>
@@ -43,6 +45,15 @@ function App() {
       <Footer />
     </>
   );
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <>

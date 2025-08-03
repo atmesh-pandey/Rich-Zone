@@ -12,7 +12,7 @@ const Navbar = () => {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    { href: '/category', label: 'Category' },
+    { href: '/#main-category', label: 'Category' },
     { href: '/products', label: 'Products' },
     { href: '/contact', label: 'Contact us' },
   ];
@@ -92,19 +92,21 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-md px-4 py-4 space-y-4">
           {navLinks.map(link => (
-            <Link
-              key={link.href}
-              to={link.href}
-              onClick={() => {
-                setActive(link.href);
-                setMenuOpen(false);
-              }}
-              className={`block text-md font-medium ${
-                active === link.href ? 'text-blue-600' : 'text-gray-800 hover:text-blue-600'
-              }`}
-            >
+            // <Link
+            //   key={link.href}
+            //   to={link.href}
+            //   onClick={() => {
+            //     setActive(link.href);
+            //     setMenuOpen(false);
+            //   }}
+            //   className={`block text-md font-medium ${
+            //     active === link.href ? 'text-blue-600' : 'text-gray-800 hover:text-blue-600'
+            //   }`}
+            // >
+            <a href={link.href}>
               {link.label}
-            </Link>
+            </a>
+            // </Link>
           ))}
         </div>
       )}
