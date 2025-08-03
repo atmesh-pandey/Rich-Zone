@@ -127,6 +127,7 @@ const Heart = () => {
                             title={title}
                             description={description}
                             index={index}
+                            parentIndex={1}
                             onClickHandler={() => handleCardSelection(1, index)}
                         />
                     ))}
@@ -161,13 +162,13 @@ const Heart = () => {
             </div>
 
         {/* Toggle Button */}
-        {items.length > 4 && (
+        {/* {items.length > 4 && (
           <div className="flex justify-center mt-6">
             <button onClick={() => setShowAll((prev) => !prev)} className="bg-[color:#9BC936] text-white px-6 py-2 rounded hover:bg-[color:#85b02f] transition hover:scale-105">
               {showAll ? "View Less" : "Show More"}
             </button>
           </div>
-        )}
+        )} */}
       </div>
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} data={selectedData} />
     </>
