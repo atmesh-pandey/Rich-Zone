@@ -95,7 +95,7 @@ const Hero = () => {
                 setCurrentSlide(index); // change slide
                 resetSlider(); // 👈 reset timer
               }}
-              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-white shadow-lg" : "bg-white/50 hover:bg-white/80"}`}
+              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-[yellow] shadow-lg" : "bg-[yellow] hover:bg-[blue]"}`}
             ></span>
           ))}
         </div>
