@@ -11,11 +11,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-4 px-6 w-full">
+    <footer className=" text-black py-4 px-6 w-full" style={{ backgroundColor: "#eee" }}>
       {/* Company Name + Divider */}
       <div className="text-start mb-2">
         <h1 className="py-8 px-8 text-2xl font-bold uppercase text-red-600">
-          European Plastic Joint Stock Company
+          Rich Zone WorldWide Limited
         </h1>
         <hr className="mt-1 border-gray-400 w-2 mx-auto" />
       </div>
@@ -111,7 +111,7 @@ const Footer = () => {
 
         </div>
       </div>
-      <div className="bg-blue-900 text-white text-center py-4 mt-8">
+      <div className="bg-[color:#9BC936] text-white text-center py-4 mt-8">
         <p>&copy; 2025 Rich Zone. All rights reserved.</p>
       </div>
     </footer>

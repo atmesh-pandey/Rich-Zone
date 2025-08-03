@@ -7,7 +7,6 @@ import Advantages from './components/Advantages';
 import Contact from './components/Contact';
 import Heart from './components/Heart';
 import Explanation from './components/Explanation';
-import Country from './components/Country';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
 import About from './components/About';
@@ -34,7 +33,7 @@ function App() {
       <Hero />
       <Heart />
       <Explanation />
-      <Country />
+      {/* <Country /> */}
       <Advantages />
       {/* <Blog /> */}
       <Contact />

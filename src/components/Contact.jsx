@@ -41,7 +41,7 @@ const Contact = () => {
       id="contact"
       className="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold uppercase mb-10 text-center">
+      <h2 className="uppercase mb-10 text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[color:#9BC936]">
         Contact Us
       </h2>
 
@@ -96,7 +96,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full py-3 bg-gray-700 text-white font-semibold rounded-lg hover:bg-gray-900 transition duration-300"
+            className="w-full py-3 bg-[color:#9BC936] text-white font-semibold rounded-lg hover:bg-[color:#85b02f] transition duration-300"
           >
             Send
           </button>
