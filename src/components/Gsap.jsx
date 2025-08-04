@@ -14,8 +14,8 @@ const Gsap = ({ textArr, dir }) => {
       },
       {
         x: dir === 0 || dir === 2 ? "-100%" : "100%",
-        duration: 24,
-        ease: "none",
+        duration: 40,
+        ease: "linear",
         repeat: -1,
       }
     );
