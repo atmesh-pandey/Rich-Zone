@@ -79,21 +79,19 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-md px-4 py-4 space-y-4">
           {navLinks.map((link) => (
-            // <Link
-            //   key={link.href}
-            //   to={link.href}
-            //   onClick={() => {
-            //     setActive(link.href);
-            //     setMenuOpen(false);
-            //   }}
-            //   className={`block text-md font-medium ${
-            //     active === link.href ? 'text-blue-600' : 'text-gray-800 hover:text-blue-600'
-            //   }`}
-            // >
-            <a href={link.href} className={`block text-md font-medium ${active === link.href ? "text-blue-600" : "text-gray-800 hover:text-blue-600"}`}>
-              {link.label}
-            </a>
-            // </Link>
+            <Link
+              key={link.href}
+              to={link.href}
+              onClick={() => {
+                setActive(link.href);
+                setMenuOpen(false);
+              }}
+              className={`block text-md font-medium ${active === link.href ? "text-blue-600" : "text-gray-800 hover:text-blue-600"}`}
+            >
+              <a href={link.href} className={`block text-md font-medium ${active === link.href ? "text-blue-600" : "text-gray-800 hover:text-blue-600"}`}>
+                {link.label}
+              </a>
+            </Link>
           ))}
         </div>
       )}
