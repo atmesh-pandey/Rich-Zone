@@ -7,7 +7,7 @@ const slides = [
       <>
         <span style={{ width: "60vw" }}>
           <span className="relative text-[color:#9BC936]">India’s</span>{" "}
-          Leading Manufacturer Filler Masterbatch Solutions
+          Leading import-export Filler Masterbatch Solutions.
         </span>
       </>
     ),

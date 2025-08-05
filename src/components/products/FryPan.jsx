@@ -10,7 +10,7 @@ const FryPan = () => {
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src='/images/fryPan.jpg'
-            alt="Jenny Stainless Steel Fry Pan"
+            alt="Triplex Stainless Steel Fry Pan"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }} // fallback inline style
           />
@@ -19,10 +19,10 @@ const FryPan = () => {
         {/* Product Details */}
         <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Tri-Ply Stainless Steel Fry Pan</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Tri-Ply Stainless Steel Fry Pan</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              The Jenny® Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.
+              The Triplex Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.
             </p>
 
             <div className="mb-5">

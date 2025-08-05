@@ -19,7 +19,7 @@ const BiryaniPot = () => {
         {/* Product Details */}
         <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Tri-Ply Premium Stainless Steel Biryani Pot</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Tri-Ply Premium Stainless Steel Biryani Pot</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
               Perfectly crafted for authentic biryani cooking, this premium stainless steel pot offers durability and excellent heat distribution for rich, flavorful meals.

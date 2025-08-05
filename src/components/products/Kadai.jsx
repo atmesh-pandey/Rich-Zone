@@ -19,10 +19,10 @@ const Kadai = () => {
         {/* Product Details */}
         <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Tri-Ply Stainless Steel Kadai</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Tri-Ply Stainless Steel Kadai</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              Designed for performance and durability, the Jenny® Tri-Ply Kadai is perfect for everyday Indian cooking—from sautéing to deep frying. Its premium tri-ply construction ensures even heating and faster cooking.
+              Designed for performance and durability, the Triplex Tri-Ply Kadai is perfect for everyday Indian cooking—from sautéing to deep frying. Its premium tri-ply construction ensures even heating and faster cooking.
             </p>
 
             <div className="mb-5">

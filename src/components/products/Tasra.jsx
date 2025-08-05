@@ -10,7 +10,7 @@ const Tasra = () => {
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src='/images/tasla.jpg' // Replace with actual path
-            alt="Jenny Stainless Steel Tasra"
+            alt="Triplex Stainless Steel Tasra"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
           />
@@ -19,10 +19,10 @@ const Tasra = () => {
         {/* Product Details */}
         <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Stainless Steel Tasra</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Stainless Steel Tasra</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              The Jenny® Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.
+              The Triplex Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.
             </p>
 
             <div className="mb-5">

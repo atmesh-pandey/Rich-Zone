@@ -10,7 +10,7 @@ const Top = () => {
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src='/images/top.jpg' // Replace with actual image path
-            alt="Jenny Stainless Steel Tope"
+            alt="Triplex Stainless Steel Tope"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
           />
@@ -19,10 +19,10 @@ const Top = () => {
         {/* Product Details */}
         <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Stainless Steel Top</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Stainless Steel Top</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              The Jenny® Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.
+              The Triplex Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.
             </p>
 
             <div className="mb-5">

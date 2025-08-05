@@ -16,7 +16,8 @@ const Modal = ({ isOpen, setIsOpen, data }) => {
       onClick={handleClose}
     >
       <div
-        className="bg-white rounded w-full max-w-4xl p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 relative"
+        className="bg-white rounded w-full max-w-4xl p-4 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 relative 
+                   h-[90vh] md:h-auto overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -28,7 +29,7 @@ const Modal = ({ isOpen, setIsOpen, data }) => {
         </button>
 
         {/* Image container */}
-        <div className="w-full md:w-1/2 h-64 md:h-[50vh] rounded overflow-hidden">
+        <div className="w-full md:w-1/2 h-94 sm:h-[100vh] md:h-[70vh] rounded overflow-hidden">
           <img
             src={selectedItems.image}
             alt={selectedItems.title}
