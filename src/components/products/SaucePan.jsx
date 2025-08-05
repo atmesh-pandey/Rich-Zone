@@ -4,12 +4,12 @@ import BackButton from './BackButton';
 
 const SaucePan = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='/images/pan.jpg' // Update this with your actual image path
+            src="/images/pan.jpg" // Update this with your actual image path
             alt="Triplex Stainless Steel Sauce Pan"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
@@ -17,9 +17,11 @@ const SaucePan = () => {
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Tri-Ply Stainless Steel Sauce Pan</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">
+              Triplex Tri-Ply Stainless Steel Sauce Pan
+            </h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
               The Triplex Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.
@@ -48,23 +50,6 @@ const SaucePan = () => {
               </ul>
             </div>
           </div>
-
-          {/* <div>
-            <div className="mb-5">
-              <span className="text-2xl font-bold text-pink-600">₹899</span>
-              <span className="text-sm line-through text-gray-400 ml-2">₹1,299</span>
-              <span className="text-sm text-green-600 ml-2">(31% OFF)</span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/buy-now"
-                className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded text-center transition duration-300"
-              >
-                🛒 Buy Now
-              </Link>
-            </div>
-          </div> */}
 
           <BackButton />
         </div>

@@ -4,12 +4,12 @@ import BackButton from './BackButton';
 
 const BlackWhiteMasterbatchFiller = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 pt-24 pb-16 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto px-4 pt-24 pb-16 sm:pt-28">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[90vh] overflow-hidden">
           <img
-            src='/images/blackWhite.jpeg'
+            src="/images/blackWhite.jpeg"
             alt="Black and White Masterbatch Filler"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
@@ -17,9 +17,11 @@ const BlackWhiteMasterbatchFiller = () => {
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto max-h-[90vh]">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Black and White Masterbatch Filler</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">
+              Black and White Masterbatch Filler
+            </h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
               Black and White Masterbatch Filler offers pigmentation and filler benefits, combining color and cost-effectiveness for various plastic applications.
