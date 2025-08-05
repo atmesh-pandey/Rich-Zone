@@ -4,12 +4,12 @@ import BackButton from './BackButton';
 
 const PECalciumFiller = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='/images/pePollemer.png'
+            src="/images/pePollemer.png"
             alt="PE-Based Calcium Filler"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
@@ -17,7 +17,7 @@ const PECalciumFiller = () => {
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto">
           <div>
             <h1 className="text-3xl font-bold text-gray-800 mb-3">PE-Based Calcium Filler</h1>
 

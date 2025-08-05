@@ -4,20 +4,20 @@ import BackButton from './BackButton';
 
 const Kadai = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row h-full">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src="/images/kadai.jpg"
             alt="Jenny Stainless Steel Kadai"
             className="w-full h-full object-cover"
-            style={{ maxHeight: '90vh' }} // fallback inline style for image height limit
+            style={{ maxHeight: '90vh' }} // fallback inline style
           />
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto">
           <div>
             <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Tri-Ply Stainless Steel Kadai</h1>
 
@@ -48,23 +48,6 @@ const Kadai = () => {
               </ul>
             </div>
           </div>
-
-          {/* <div>
-            <div className="mb-5">
-              <span className="text-2xl font-bold text-pink-600">₹1,499</span>
-              <span className="text-sm line-through text-gray-400 ml-2">₹2,199</span>
-              <span className="text-sm text-green-600 ml-2">(32% OFF)</span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/buy-now"
-                className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded text-center transition duration-300"
-              >
-                🛒 Buy Now
-              </Link>
-            </div>
-          </div> */}
 
           <BackButton />
         </div>
