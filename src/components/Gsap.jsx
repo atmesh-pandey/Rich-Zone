@@ -7,6 +7,10 @@ const Gsap = ({ textArr, dir }) => {
   useEffect(() => {
     const el = marqueeRef.current;
 
+    // Adjust speed based on screen width
+    const isSmallScreen = window.innerWidth < 640;
+    const duration = isSmallScreen ? 15 : 25;
+
     gsap.fromTo(
       el,
       {
@@ -14,7 +18,7 @@ const Gsap = ({ textArr, dir }) => {
       },
       {
         x: dir === 0 || dir === 2 ? "-100%" : "100%",
-        duration: 25,
+        duration,
         ease: "linear",
         repeat: -1,
       }
