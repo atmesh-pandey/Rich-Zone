@@ -4,12 +4,12 @@ import BackButton from './BackButton';
 
 const PPCalciumFiller = () => {
   return (
-    <div className="max-w-6xl mx-auto py-8 pb-16 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto py-8 px-4 sm:pt-28">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Product Image */}
-        <div className="md:w-1/2 w-full max-h-[90vh] overflow-hidden">
+        <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='/images/PP Polymers.png'
+            src="/images/PP Polymers.png"
             alt="PP-Based Calcium Filler"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
@@ -17,12 +17,13 @@ const PPCalciumFiller = () => {
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto">
           <div>
             <h1 className="text-3xl font-bold text-gray-800 mb-3">PP-Based Calcium Filler</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              PP-Based Calcium Filler improves processing stability, rigidity, and printability for polypropylene-based applications including injection molding and woven sacks.
+              PP-Based Calcium Filler improves processing stability, rigidity, and printability for
+              polypropylene-based applications including injection molding and woven sacks.
             </p>
 
             <div className="mb-5">

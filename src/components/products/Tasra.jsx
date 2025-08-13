@@ -4,25 +4,25 @@ import BackButton from './BackButton';
 
 const Tasra = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28 max-h-screen overflow-hidden">
-      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row max-h-full">
+    <div className="max-w-6xl mx-auto px-4 py-8 sm:pt-28">
+      <div className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
             src='/images/tasla.jpg' // Replace with actual path
-            alt="Jenny Stainless Steel Tasra"
+            alt="Triplex Stainless Steel Tasra"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
           />
         </div>
 
         {/* Product Details */}
-        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between max-h-[90vh] overflow-y-auto">
+        <div className="p-6 md:w-1/2 w-full flex flex-col justify-between overflow-y-auto">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-3">Jenny® Stainless Steel Tasra</h1>
+            <h1 className="text-3xl font-bold text-gray-800 mb-3">Triplex Stainless Steel Tasra</h1>
 
             <p className="text-gray-600 mb-5 text-base leading-relaxed">
-              The Jenny® Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.
+              The Triplex Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.
             </p>
 
             <div className="mb-5">
@@ -48,23 +48,6 @@ const Tasra = () => {
               </ul>
             </div>
           </div>
-
-          {/* <div>
-            <div className="mb-5">
-              <span className="text-2xl font-bold text-pink-600">₹849</span>
-              <span className="text-sm line-through text-gray-400 ml-2">₹1,199</span>
-              <span className="text-sm text-green-600 ml-2">(29% OFF)</span>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/buy-now"
-                className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded text-center transition duration-300"
-              >
-                🛒 Buy Now
-              </Link>
-            </div>
-          </div> */}
 
           <BackButton />
         </div>

@@ -80,7 +80,7 @@ const items = [
       title: 'Fry Pan',
       image: '/images/fryPan.jpg',
       description:
-        'The Jenny® Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.',
+        'The Triplex Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.',
       features: [
         'Flat Base: Ideal for frying, browning, and pan-searing',
         'Cool-Touch Handle: Ergonomic and riveted for safety',
@@ -93,7 +93,7 @@ const items = [
       title: 'Sauce Pan',
       image: '/images/pan.jpg',
       description:
-        'The Jenny® Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.',
+        'The Triplex Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.',
       features: [
         'Mirror Polish Exterior: Stylish and elegant look',
         'Precision Pouring Rim: Drip-free pouring without mess',
@@ -106,7 +106,7 @@ const items = [
       title: 'Top',
       image: '/images/top.jpg',
       description:
-        'The Jenny® Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.',
+        'The Triplex Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.',
       features: [
         'Induction & Gas Compatible: Versatile cooking options',
         'Seamless Design: Easy to clean with no sharp edges',
@@ -120,7 +120,7 @@ const items = [
       title: 'Tasra',
       image: '/images/tasla.jpg',
       description:
-        'The Jenny® Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.',
+        'The Triplex Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.',
       features: [
         'Dishwasher-Safe: Easy maintenance for everyday use',
         'Premium Stainless Steel: 100% food-grade and rust-resistant',
