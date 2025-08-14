@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-black py-6 px-6 w-full bg-[#eee]">
       {/* Company Name + Divider */}
       <div className="mb-6 px-2">
-        <h1 className="text-2xl font-bold uppercase text-red-600">
+        <h1 className="text-2xl font-bold uppercase text-[color:#9BC936]">
           Rich Zone WorldWide Limited
         </h1>
         <hr className="mt-2 border-gray-400 w-8" />
