@@ -210,7 +210,7 @@ const Product = () => {
                 to={product.path}
                 className="inline-block mt-4 bg-[color:#9BC936] hover:bg-[color:#85b02f] transition hover:scale-105 text-white font-medium py-2 px-4 rounded"
               >
-                📦 All Details
+                All Details
               </Link>
             </div>
           </div>
