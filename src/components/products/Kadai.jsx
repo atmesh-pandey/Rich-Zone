@@ -9,7 +9,7 @@ const Kadai = () => {
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src="/images/kadai.jpg"
+            src="/images/kadai.png"
             alt="Jenny Stainless Steel Kadai"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }} // fallback inline style

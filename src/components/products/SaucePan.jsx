@@ -9,7 +9,7 @@ const SaucePan = () => {
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src="/images/pan.jpg" // Update this with your actual image path
+            src="/images/pan.png" // Update this with your actual image path
             alt="Triplex Stainless Steel Sauce Pan"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}

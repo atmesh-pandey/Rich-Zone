@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const products = [
   {
     name: 'Cookware – Kadai',
-    image: '/images/kadai.jpg',
+    image: '/images/kadai.png',
     description: "Durable tri-ply stainless steel kadai for fast, even heating. Features a cool-touch handle, induction & gas-compatible base, and a stainless steel lid for better heat retention. Perfect for everyday cooking.",
     features: [
       'Material: Tri-Ply Stainless Steel',
@@ -16,7 +16,7 @@ const products = [
   },
   {
     name: 'Biryani Pot',
-    image: '/images/biryaniPoat.jpg',
+    image: '/images/biryaniPoat.png',
     description:
       'Perfectly crafted for authentic biryani cooking, this premium stainless steel pot offers durability and excellent heat distribution for rich, flavorful meals.',
     features: [
@@ -31,7 +31,7 @@ const products = [
   },
   {
     name: 'Fry Pan',
-    image: '/images/fryPan.jpg',
+    image: '/images/fryPan.png',
     description:
       'The Triplex Tri-Ply Fry Pan is a kitchen essential engineered for effortless frying, sautéing, and stir-frying. With its tri-ply design, you’ll enjoy consistent cooking results every time.',
     features: [
@@ -44,7 +44,7 @@ const products = [
   },
   {
     name: 'Sauce Pan',
-    image: '/images/pan.jpg',
+    image: '/images/pan.png',
     description:
       'The Triplex Tri-Ply Sauce Pan is your everyday companion for boiling, simmering, and preparing sauces or gravies. Built with a tri-ply structure, it ensures faster and more even cooking across all stovetops.',
     features: [
@@ -57,7 +57,7 @@ const products = [
   },
   {
     name: 'Top',
-    image: '/images/top.jpg',
+    image: '/images/top.png',
     description:
       'The Triplex Stainless Steel Top is an essential cookware item in every Indian kitchen—perfect for boiling milk, water, or preparing soups and gravies. Made with premium food-grade stainless steel and a sleek finish.',
     features: [
@@ -71,7 +71,7 @@ const products = [
   },
   {
     name: 'Tasra',
-    image: '/images/tasla.jpg',
+    image: '/images/tasla.png',
     description:
       'The Triplex Stainless Steel Tasra is ideal for simmering curries, boiling milk, or making tea. Crafted from premium stainless steel, it combines functionality with elegant design—perfect for modern Indian kitchens.',
     features: [

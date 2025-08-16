@@ -9,7 +9,7 @@ const Tasra = () => {
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src='/images/tasla.jpg' // Replace with actual path
+            src='/images/tasla.png' // Replace with actual path
             alt="Triplex Stainless Steel Tasra"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
