@@ -10,10 +10,10 @@ const Catagory = () => {
           Plastic Raw Material
         </a>
         <a href="#steel" className="w-full text-center py-3 px-6 cursor-pointer text-gray-700 border-b-2 border-transparent hover:text-[color:#9BC936] transition-all duration-200">
-          Stilness Steel Processing
+          Stainless Steel Triply 
         </a>
         <a href="#spices" className="w-full text-center py-3 px-6 cursor-pointer text-gray-700 border-b-2 border-transparent hover:text-[color:#9BC936] transition-all duration-200">
-          Export Whole Spices & Others
+          Diverse Export Portfolio
         </a>
       </div>
 

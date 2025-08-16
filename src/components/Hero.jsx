@@ -7,13 +7,38 @@ const slides = [
       <>
         <span style={{ width: "60vw" }}>
           <span className="relative text-[color:#9BC936]">India’s</span>{" "}
-          Leading import-export Filler Masterbatch Solutions.
+          Leading import and export Conglomerate.
         </span>
       </>
     ),
     row: 1,
   },
-  {
+{
+  image: "/images/filler.jpeg",
+  title: (
+    <>
+      <span
+        className="block max-w-[50vw] text-left leading-snug font-semibold pl-12 text-[#9BC936]"
+      >
+        <span className="relative text-[#9BC936]">India’s</span>{" "}
+        Your Trusted Partner in Import, Export & Filler Masterbatch.
+      </span>
+    </>
+  ),
+},
+{
+  image: "/images/calcium.jpeg",
+  title: (
+    <>
+      <span
+        className="flex items-right justify-end w-[50vw] leading-snug font-semibold text-[#9BC936] ml-auto"
+      >
+        Delivering High-Quality Calcium Carbonate to Global Markets.
+      </span>
+    </>
+  ),
+},
+{
     image: "/images/banner2.jpg",
     title: (
       <span
