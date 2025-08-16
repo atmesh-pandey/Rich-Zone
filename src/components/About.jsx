@@ -140,7 +140,7 @@ const About = () => {
 
         {/* Why Work With Us */}
         <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936] pl-[10px]">Why Work With Us</h1>
+          <h1 className="text-2xl font-bold mb-3 bg-[color:#9BC936] pl-[10px]">Why Choose Us</h1>
           <ul className="list-disc pl-6 space-y-2 text-lg">
             <li><strong>Global Reach:</strong> Long-standing supplier relationships in Asia, the Middle East, and beyond</li>
             <li><strong>Consistent Quality:</strong> Strict quality control standards at every step</li>
