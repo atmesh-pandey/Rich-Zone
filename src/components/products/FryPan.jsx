@@ -9,7 +9,7 @@ const FryPan = () => {
         {/* Product Image */}
         <div className="md:w-1/2 w-full max-h-[75vh] overflow-hidden">
           <img
-            src="/images/fryPan.jpg"
+            src="/images/fryPan.png"
             alt="Triplex Stainless Steel Fry Pan"
             className="w-full h-full object-cover"
             style={{ maxHeight: '90vh' }}
