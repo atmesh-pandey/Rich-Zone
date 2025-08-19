@@ -1,44 +1,85 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const slides = [
+  // ✅ Banner 1 (responsive, centered)
   {
     image: "/images/banner1.webp",
     title: (
-      <>
-        <span style={{ width: "60vw" }}>
-          <span className="relative text-[color:#9BC936]">India’s</span>{" "}
-          Leading import and export Conglomerate.
-        </span>
-      </>
+      <span
+        className="
+          block 
+          text-center 
+          font-semibold 
+          leading-snug
+          w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
+          text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+          mx-auto
+          drop-shadow-xl
+          drop-shadow-black
+        "
+      >
+        <span className="relative text-[#9BC936]">India’s</span>{" "}
+        Leading Import and Export Conglomerate.
+      </span>
     ),
     row: 1,
   },
-{
-  image: "/images/filler.jpeg",
-  title: (
-    <>
+
+  // ✅ Banner 2 (left aligned, text shifted upward a little bit)
+  {
+    image: "/images/F1.png",
+    title: (
       <span
-        className="block max-w-[50vw] text-left leading-snug font-semibold pl-12 text-[#9BC936]"
+        className="
+        block
+        text-left
+        font-semibold 
+        text-[#9BC936]
+        leading-snug
+        pl-4 md:pl-8
+        w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
+        text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+        relative 
+        -mt-54
+        drop-shadow-xl
+          drop-shadow-black
+        // top-[-22px]
+
+      "
       >
         <span className="relative text-[#9BC936]">India’s</span>{" "}
         Your Trusted Partner in Import, Export & Filler Masterbatch.
       </span>
-    </>
-  ),
-},
-{
-  image: "/images/calcium.jpeg",
-  title: (
-    <>
+    ),
+  },
+
+  // ✅ Banner 3 (right aligned, responsive)
+  {
+    image: "/images/ca.jpg",
+    title: (
       <span
-        className="flex items-right justify-end w-[50vw] leading-snug font-semibold text-[#9BC936] ml-auto"
+        className="
+          block 
+          text-right 
+          text-[#9BC936] 
+          font-semibold 
+          leading-snug
+          mr-4 md:mr-12
+          w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[50vw]
+        text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+          ml-auto
+          drop-shadow-xl
+          drop-shadow-black
+        "
       >
+
         Delivering High-Quality Calcium Carbonate to Global Markets.
       </span>
-    </>
-  ),
-},
-{
+    ),
+  },
+
+  // ✅ Banner 4 (unchanged)
+  {
     image: "/images/banner2.jpg",
     title: (
       <span
@@ -53,39 +94,43 @@ const slides = [
           textShadow: "0 0 1px 10px black",
         }}
       >
-        {/* <p>Innovating Plastic</p>
-        <p>with</p>
-        <p>Nature in Mind</p> */}
+        {/* Keep as-is */}
       </span>
     ),
   },
+    // ✅ Banner 5 (right aligned, responsive like banner 3)
   {
-    image: "/images/banner3.jpg",
-    title: (
+  image: "/images/banner3.jpg",
+  title: (
+    <div className="relative w-full flex justify-center -mt-24">
       <span
-        style={{
-          textAlign: "center",
-          color: "yellow",
-          display: "grid",
-          marginLeft: "40px",
-          marginTop: "-10vh",
-          // textShadow: `-2px -2px 0 #888,
-          //   2px -2px 0 #888,
-          //   -2px  2px 0 #888,
-          //   2px  2px 0 #888,
-          //   0    0  10px #888`,
-        }}
+        className="
+          relative
+          block 
+          text-center 
+          font-semibold 
+          leading-snug
+          w-[90vw] sm:w-[90vw] md:w-[85vw] lg:w-[70vw]
+          text-5xl sm:text-5xl md:text-4xl lg:text-7xl
+          mx-auto
+          text-white
+          z-10
+          drop-shadow-xl
+          drop-shadow-black
+        "
       >
-        {/* <p>Driven by Purpose</p>
-        <p>Delivered with Precision</p> */}
+        Connecting{" "}
+        <span className="relative text-[#9BC936] drop-shadow-md">Global</span> markets through trusted import and export solutions.
       </span>
-    ),
-  },
+    </div>
+  ),
+}
+
 ];
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const intervalRef = useRef(null); // 👈 for storing interval ID
+  const intervalRef = useRef(null);
 
   const startSlider = () => {
     intervalRef.current = setInterval(() => {
@@ -99,17 +144,35 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    startSlider(); // start on mount
-    return () => clearInterval(intervalRef.current); // clear on unmount
+    startSlider();
+    return () => clearInterval(intervalRef.current);
   }, []);
 
   const { image, title, row } = slides[currentSlide];
 
   return (
-    <section className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out" style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}>
+    <section
+      className="relative w-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+      style={{ backgroundImage: `url('${image}')`, height: "calc(100vh - 81px)" }}
+    >
       {/* Gradient Overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-r flex flex-col justify-center px-4 text-white text-center ${row === 1 ? "items-center" : ""}`}>
-        <h1 className={`text-5xl md:text-7xl sm:text-4xl font-extrabold mb-4 drop-shadow-lg uppercase break-words ${row === 1 ? "w-[60vw]" : ""}`}>{title}</h1>
+      <div
+        className={`
+          absolute inset-0 
+          bg-gradient-to-r 
+          flex flex-col justify-center px-4 
+          text-white text-center 
+          ${row === 1 ? "items-center" : ""}
+        `}
+      >
+        <h1
+          className={`
+            font-extrabold drop-shadow-lg uppercase
+            ${row === 1 ? "mx-auto" : ""}
+          `}
+        >
+          {title}
+        </h1>
 
         {/* Slide Dots */}
         <div className="absolute bottom-8 flex justify-center w-full space-x-3">
@@ -117,10 +180,13 @@ const Hero = () => {
             <span
               key={index}
               onClick={() => {
-                setCurrentSlide(index); // change slide
-                resetSlider(); // 👈 reset timer
+                setCurrentSlide(index);
+                resetSlider();
               }}
-              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide ? "scale-125 bg-[#9BC936] shadow-lg" : "bg-[#9BC936] hover:bg-[blue]"}`}
+              className={`h-3 w-3 rounded-full cursor-pointer transform transition-all duration-300 ${index === currentSlide
+                ? "scale-125 bg-[#9BC936] shadow-lg"
+                : "bg-[#9BC936] hover:bg-[#9BC936]"
+                }`}
             ></span>
           ))}
         </div>
